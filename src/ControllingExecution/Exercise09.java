@@ -12,8 +12,9 @@ import static java.lang.Integer.parseInt;
 public class Exercise09 {
 
     static int fib(int n) {
-        if (n <= 2)
+        if  (n <= 2) {
             return 1;
+        }
         return fib(n-1) + fib(n-2);
     }
     public static void main(String[] args) {
@@ -23,7 +24,8 @@ public class Exercise09 {
             System.out.println("不能使用负数");
             return;
         }
-        for(int i = 1; i <= n; i++)
+        for(int i = 1; i <= n; i++) {
             System.out.print(fib(i) + ", ");
+        }
     }
 }
